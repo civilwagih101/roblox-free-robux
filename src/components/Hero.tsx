@@ -29,7 +29,7 @@ export const Hero = () => {
           
           <a
             href="https://kk6.online/cl/i/o6gvwd"
-            className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white text-lg md:text-xl font-semibold px-12 py-5 rounded-xl transform transition-all duration-300 hover:scale-105 hover:shadow-xl shadow-lg ring-2 ring-white/10"
+            className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white text-lg md:text-xl font-semibold px-12 py-5 rounded-xl transform transition-all duration-300 hover:scale-105 hover:shadow-xl shadow-lg ring-2 ring-white/10"
           >
             <Download className="w-6 h-6" />
             Download Now
