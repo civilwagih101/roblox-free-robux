@@ -2,13 +2,22 @@ import { Gamepad, Download } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <div className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-primary via-secondary-DEFAULT to-accent overflow-hidden">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5')] opacity-20 bg-cover bg-center mix-blend-overlay" />
+    <div className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-primary/90 via-secondary-DEFAULT to-accent overflow-hidden">
+      {/* Game-themed background overlay */}
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e')] bg-cover bg-center opacity-20 mix-blend-overlay" />
       
-      {/* Animated background shapes */}
+      {/* Animated floating game elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-4 -left-4 w-72 h-72 bg-primary/30 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute top-1/2 -right-4 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse delay-700" />
+        {/* Floating cubes */}
+        <div className="absolute top-20 left-20 w-32 h-32 bg-primary/20 rounded-lg rotate-45 animate-[float_6s_ease-in-out_infinite] blur-sm" />
+        <div className="absolute bottom-40 right-20 w-24 h-24 bg-accent/20 rounded-lg -rotate-12 animate-[float_8s_ease-in-out_infinite] delay-300 blur-sm" />
+        
+        {/* Glowing orbs */}
+        <div className="absolute top-1/4 left-1/3 w-48 h-48 bg-primary/30 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/3 w-64 h-64 bg-accent/20 rounded-full blur-3xl animate-pulse delay-700" />
+        
+        {/* Particle effects */}
+        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/5 to-transparent opacity-50" />
       </div>
 
       <div className="container mx-auto px-4 text-center relative z-10">
